@@ -1,6 +1,4 @@
 /* Lucas Cândido Barcelos RA: 2022007290 */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=VT323&display=swap");
 
 * {
@@ -14,31 +12,18 @@ body {
   overflow: hidden;
 }
 
-#menu li {
-  display: block;
-  list-style: none;
-  gap: 10px;
-  font-size: 20px;
-}
-
 .game-board {
   width: 100%;
-  height: 75vh;
-  /* border-bottom: 18px solid rgb(35, 160, 35); */
+  height: 95vh;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
   background: linear-gradient(#87ceeb, #e0f6ff);
 }
 
 #floor {
   background: linear-gradient(#0d6b07, #b55b1f, #6b3612);
   height: 200px;
-  width: 100%;
-}
-
-#floor-img {
-  height: 100%;
   width: 100%;
 }
 
@@ -68,7 +53,7 @@ body {
 
 @keyframes pipe-animation {
   from {
-    right: 0;
+    right: -40px;
   }
 
   to {
@@ -119,7 +104,7 @@ body {
 }
 
 #game-over h1 {
-  font-size: 100px;
+  font-size: 120px;
 }
 
 .game-over-message h3,
@@ -127,7 +112,7 @@ button {
   align-items: center;
   position: relative;
   justify-content: start;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #play-again {
@@ -145,4 +130,10 @@ button {
 
 #play-again:hover {
   background-color: #b9b7b7;
+}
+
+a {
+  font-style: italic;
+  font-style: ;
+  color: black;
 }
