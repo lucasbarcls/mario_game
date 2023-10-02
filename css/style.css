@@ -1,0 +1,148 @@
+/* Lucas Cândido Barcelos RA: 2022007290 */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+
+body {
+  overflow: hidden;
+}
+
+#menu li {
+  display: block;
+  list-style: none;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.game-board {
+  width: 100%;
+  height: 75vh;
+  /* border-bottom: 18px solid rgb(35, 160, 35); */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+#floor {
+  background: linear-gradient(#0d6b07, #b55b1f, #6b3612);
+  height: 200px;
+  width: 100%;
+}
+
+#floor-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 85px;
+  animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+.clouds {
+  position: absolute;
+  width: 550px;
+  animation: clouds-animation 18s infinite linear;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 180px;
+  }
+
+  50% {
+    bottom: 180px;
+  }
+
+  60% {
+    bottom: 180px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -550px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+#game-over {
+  display: none;
+  position: fixed;
+  top: 35%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+#game-over h1 {
+  font-size: 100px;
+}
+
+.game-over-message h3,
+button {
+  align-items: center;
+  position: relative;
+  justify-content: start;
+  font-size: 20px;
+}
+
+#play-again {
+  border-radius: 5px;
+  padding: 3px;
+  border: 2px solid #000;
+  background-color: white;
+  box-shadow: -2px 1.5px 0 #000;
+}
+
+#play-again:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 5px #000;
+}
+
+#play-again:hover {
+  background-color: #b9b7b7;
+}

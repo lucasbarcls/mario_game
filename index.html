@@ -1,3 +1,5 @@
+<!-- Lucas Cândido Barcelos RA: 2022007290 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,14 +8,31 @@
     <title>Mario Jump</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
-    <link rel="shortcut icon" href="./favicon/cogumelo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./favicon/cogumelo.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="game-board">
+      <!-- <header>
+        <button id="btn-menu">Menu</button>
+        <ul id="menu">
+          <li>Login</li>
+          <li><button id="btn-mode">Options</button></li>
+          <li>Ranking</li>
+        </ul>
+      </header> -->
       <img src="./images/mario.webp" class="mario" />
       <img src="./images/pipe.png" class="pipe" />
       <img src="./images/clouds.png" class="clouds" />
+      <div class="game-over-message" id="game-over">
+        <h1>Game Over</h1>
+        <h3 id="score"></h3>
+        <button id="play-again">Play again</button>
+      </div>
     </div>
-    <div class="floor"></div>
+    <div id="floor"></div>
   </body>
 </html>
